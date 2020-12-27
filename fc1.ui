@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>787</width>
+    <height>802</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>21</pointsize>
+          <weight>75</weight>
+          <italic>true</italic>
+          <bold>true</bold>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="text">
+         <string>Fantasy Cricket</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="team_name">
+      <property name="font">
+       <font>
+        <family>Lucida Fax</family>
+        <pointsize>14</pointsize>
+        <italic>true</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>                                            Team Name</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="Batsman">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Batsman(BAT)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="batcount">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>##</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Wicketkeeepr">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>WicketKeeper(WK)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="wicketcount">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>##</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Allrounder">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>AllRounder(ALR)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="alrcount">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>##</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Bowlers">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Bowler(BOWL)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="bowlcount">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>##</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="bow_rb">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Bowler</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="bat_rb">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::StrongFocus</enum>
+        </property>
+        <property name="text">
+         <string>Batsman</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="ar_rb">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>All Rounder</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="wk_rb">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Wicket Keeper</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="Totalplayers">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Available Points </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="points_available">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>00</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="TeamName">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Used Points</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="points_used">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>00</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Available Players</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <family>Lucida Fax</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Selected Players</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QListWidget" name="availplayers_lw"/>
+      </item>
+      <item>
+       <widget class="QListWidget" name="selectedplayers_lw"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>787</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuManage_Teams">
+    <property name="title">
+     <string>Manage Teams</string>
+    </property>
+    <addaction name="new_team"/>
+    <addaction name="open_team"/>
+    <addaction name="evaluate_team"/>
+    <addaction name="save_team"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuManage_Teams"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="new_team">
+   <property name="text">
+    <string>New Team</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="open_team">
+   <property name="text">
+    <string>Open Team</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="evaluate_team">
+   <property name="text">
+    <string>Evaluate Team</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="save_team">
+   <property name="text">
+    <string>Save Team</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
